@@ -25,11 +25,15 @@ import Fragments from "./Components/Fragments/Fragments"
 import PureComp from "./Components/PureComponent/PureComp"
 import RegVsPure from "./Components/PureComponent/RegVsPure"
 import RegVsMemo from "./Components/Memo/RegVsMemo"
+import Refs from "./Components/RefsInReact/Refs"
+import CallBackRefs from "./Components/RefsInReact/CallBackRefs"
 
 function App() {
   return (
     <div className="App">
-      <RegVsMemo />
+      <CallBackRefs />
+      {/* <Refs /> */}
+      {/* <RegVsMemo /> */}
       {/* <RegVsPure /> */}
       {/* <Fragments /> */}
       {/* <UpdatingLifeCycle /> */}
