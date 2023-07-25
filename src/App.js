@@ -22,11 +22,14 @@ import FormHandle from "./Components/BasicsOfFormHandling/FormHandle"
 import MountingLifeCycle from "./Components/ComponentLifeCycle/MountingLifeCycle"
 import UpdatingLifeCycle from "./Components/ComponentLifeCycle/UpdatingLifeCycle"
 import Fragments from "./Components/Fragments/Fragments"
+import PureComp from "./Components/PureComponent/PureComp"
+import RegVsPure from "./Components/PureComponent/RegVsPure"
 
 function App() {
   return (
     <div className="App">
-      <Fragments />
+      <RegVsPure />
+      {/* <Fragments /> */}
       {/* <UpdatingLifeCycle /> */}
       {/* <MountingLifeCycle /> */}
       {/* <FormHandle /> */}
