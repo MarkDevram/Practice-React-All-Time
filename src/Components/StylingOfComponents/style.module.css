@@ -1,0 +1,21 @@
+/* h1 {
+  color: #bc3737;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+} */
+.bird {
+  font-family: cursive;
+  color: aqua;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+.dog {
+  font-family: cursive;
+  color: rgb(128, 239, 132);
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
