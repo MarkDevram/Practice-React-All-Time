@@ -20,7 +20,7 @@ class PureComp extends PureComponent {
   }
 
   render() {
-    console.log("Inside render")
+    console.log("Regular Component  :- Inside updateScore Fn")
     return (
       <div>
         <h1>Lecture : PureComponents</h1>

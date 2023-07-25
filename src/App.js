@@ -24,11 +24,13 @@ import UpdatingLifeCycle from "./Components/ComponentLifeCycle/UpdatingLifeCycle
 import Fragments from "./Components/Fragments/Fragments"
 import PureComp from "./Components/PureComponent/PureComp"
 import RegVsPure from "./Components/PureComponent/RegVsPure"
+import RegVsMemo from "./Components/Memo/RegVsMemo"
 
 function App() {
   return (
     <div className="App">
-      <RegVsPure />
+      <RegVsMemo />
+      {/* <RegVsPure /> */}
       {/* <Fragments /> */}
       {/* <UpdatingLifeCycle /> */}
       {/* <MountingLifeCycle /> */}
