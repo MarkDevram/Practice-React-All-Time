@@ -27,11 +27,13 @@ import RegVsPure from "./Components/PureComponent/RegVsPure"
 import RegVsMemo from "./Components/Memo/RegVsMemo"
 import Refs from "./Components/RefsInReact/Refs"
 import CallBackRefs from "./Components/RefsInReact/CallBackRefs"
+import ParentRef from "./Components/RefsInReact/PassingRefToClassComp/ParentRef"
 
 function App() {
   return (
     <div className="App">
-      <CallBackRefs />
+      <ParentRef />
+      {/* <CallBackRefs /> */}
       {/* <Refs /> */}
       {/* <RegVsMemo /> */}
       {/* <RegVsPure /> */}
