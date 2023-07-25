@@ -28,11 +28,13 @@ import RegVsMemo from "./Components/Memo/RegVsMemo"
 import Refs from "./Components/RefsInReact/Refs"
 import CallBackRefs from "./Components/RefsInReact/CallBackRefs"
 import ParentRef from "./Components/RefsInReact/PassingRefToClassComp/ParentRef"
+import FwdRefSender from "./Components/ForwardingRefs/FwdRefSender"
 
 function App() {
   return (
     <div className="App">
-      <ParentRef />
+      <FwdRefSender />
+      {/* <ParentRef /> */}
       {/* <CallBackRefs /> */}
       {/* <Refs /> */}
       {/* <RegVsMemo /> */}
