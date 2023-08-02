@@ -31,14 +31,16 @@ import ParentRef from "./Components/RefsInReact/PassingRefToClassComp/ParentRef"
 import FwdRefSender from "./Components/ForwardingRefs/FwdRefSender"
 import Hero from "./Components/ErrorBoundary/Hero"
 import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary"
+import PortalDemo from "./Components/Portals/PortalDemo"
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
+      <PortalDemo />
+      {/* <ErrorBoundary>
         <Hero name="Suresh" />
         <Hero name="Ramesh" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* <FwdRefSender /> */}
       {/* <ParentRef /> */}
       {/* <CallBackRefs /> */}
