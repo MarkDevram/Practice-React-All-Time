@@ -32,11 +32,16 @@ import FwdRefSender from "./Components/ForwardingRefs/FwdRefSender"
 import Hero from "./Components/ErrorBoundary/Hero"
 import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary"
 import PortalDemo from "./Components/Portals/PortalDemo"
+import ClickCounter from "./Components/HigherOrderComponents/ClickCounter"
+import HoverCounter from "./Components/HigherOrderComponents/HoverCounter"
 
 function App() {
   return (
     <div className="App">
-      <PortalDemo />
+      <ClickCounter />
+      <HoverCounter />
+      {/* <HoverCounter /> */}
+      {/* <PortalDemo /> */}
       {/* <ErrorBoundary>
         <Hero name="Suresh" />
         <Hero name="Ramesh" />
