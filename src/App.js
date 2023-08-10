@@ -34,12 +34,24 @@ import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary"
 import PortalDemo from "./Components/Portals/PortalDemo"
 import ClickCounter from "./Components/HigherOrderComponents/ClickCounter"
 import HoverCounter from "./Components/HigherOrderComponents/HoverCounter"
+import LogicOfCounter from "./Components/RenderProps/LogicOfCounter"
+import MouseClick from "./Components/RenderProps/MouseClick"
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter />
-      <HoverCounter />
+      <LogicOfCounter
+        render={(count, incCount) => {
+          return <MouseClick count={count} incCount={incCount} />
+        }}
+      />
+      <LogicOfCounter
+        render={function (count, incCrement) {
+          return <HoverCounter count={count} incCrement={incCrement} />
+        }}
+      />
+      {/* <ClickCounter />
+      <HoverCounter /> */}
       {/* <HoverCounter /> */}
       {/* <PortalDemo /> */}
       {/* <ErrorBoundary>
