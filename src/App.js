@@ -36,11 +36,15 @@ import ClickCounter from "./Components/HigherOrderComponents/ClickCounter"
 import HoverCounter from "./Components/HigherOrderComponents/HoverCounter"
 import LogicOfCounter from "./Components/RenderProps/LogicOfCounter"
 import MouseClick from "./Components/RenderProps/MouseClick"
-
+import ComponentC from "./Components/Context/ComponentC"
+import { UserProvider } from "./Components/Context/userContext"
 function App() {
   return (
     <div className="App">
-      <LogicOfCounter
+      <UserProvider value="Ramesh">
+        <ComponentC />
+      </UserProvider>
+      {/* <LogicOfCounter
         render={(count, incCount) => {
           return <MouseClick count={count} incCount={incCount} />
         }}
@@ -49,7 +53,7 @@ function App() {
         render={function (count, incCrement) {
           return <HoverCounter count={count} incCrement={incCrement} />
         }}
-      />
+      /> */}
       {/* <ClickCounter />
       <HoverCounter /> */}
       {/* <HoverCounter /> */}
