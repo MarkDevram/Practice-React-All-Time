@@ -37,13 +37,16 @@ import HoverCounter from "./Components/HigherOrderComponents/HoverCounter"
 import LogicOfCounter from "./Components/RenderProps/LogicOfCounter"
 import MouseClick from "./Components/RenderProps/MouseClick"
 import ComponentC from "./Components/Context/ComponentC"
-import { UserProvider } from "./Components/Context/userContext"
+import { userContext, myContext } from "./Components/Context/userContext"
 function App() {
   return (
     <div className="App">
-      <UserProvider value="Ramesh">
+      <userContext.Provider value="Ramesh">
         <ComponentC />
-      </UserProvider>
+      </userContext.Provider>
+      <myContext.Provider value="Pooja">
+        <ComponentC />
+      </myContext.Provider>
       {/* <LogicOfCounter
         render={(count, incCount) => {
           return <MouseClick count={count} incCount={incCount} />
