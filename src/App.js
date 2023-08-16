@@ -38,15 +38,17 @@ import LogicOfCounter from "./Components/RenderProps/LogicOfCounter"
 import MouseClick from "./Components/RenderProps/MouseClick"
 import ComponentC from "./Components/Context/ComponentC"
 import { userContext, myContext } from "./Components/Context/userContext"
+import DisplayPosts from "./Components/Axios/DisplayPosts"
 function App() {
   return (
     <div className="App">
-      <userContext.Provider value="Ramesh">
+      <DisplayPosts />
+      {/* <userContext.Provider value="Ramesh">
         <ComponentC />
       </userContext.Provider>
       <myContext.Provider value="Pooja">
         <ComponentC />
-      </myContext.Provider>
+      </myContext.Provider> */}
       {/* <LogicOfCounter
         render={(count, incCount) => {
           return <MouseClick count={count} incCount={incCount} />
