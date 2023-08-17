@@ -39,10 +39,15 @@ import MouseClick from "./Components/RenderProps/MouseClick"
 import ComponentC from "./Components/Context/ComponentC"
 import { userContext, myContext } from "./Components/Context/userContext"
 import DisplayPosts from "./Components/Axios/DisplayPosts"
+import PostRequest from "./Components/Axios/PostRequest"
+import MovieTitles from "./Components/Dummy/MovieTitles"
 function App() {
   return (
     <div className="App">
-      <DisplayPosts />
+      <PostRequest />
+      {/* <MovieTitles /> */}
+      {/* <PostRequest /> */}
+      {/* <DisplayPosts /> */}
       {/* <userContext.Provider value="Ramesh">
         <ComponentC />
       </userContext.Provider>
