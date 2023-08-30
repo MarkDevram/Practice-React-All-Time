@@ -37,14 +37,46 @@ import HoverCounter from "./Components/HigherOrderComponents/HoverCounter"
 import LogicOfCounter from "./Components/RenderProps/LogicOfCounter"
 import MouseClick from "./Components/RenderProps/MouseClick"
 import ComponentC from "./Components/Context/ComponentC"
-import { userContext, myContext } from "./Components/Context/userContext"
 import DisplayPosts from "./Components/Axios/DisplayPosts"
-import PostRequest from "./Components/Axios/PostRequest"
+// import PostRequest from "./Components/Axios/PostRequest"
 import MovieTitles from "./Components/Dummy/MovieTitles"
+import Portal from "./PraticeComponent/Portals/Portal"
+import ListRendering from "./PraticeComponent/Portals/ListRendering"
+import Logic from "./PraticeComponent/RenderProps/Logic"
+import HoverClick from "./PraticeComponent/RenderProps/HoverClick"
+import { userContext } from "./Components/Context/userContext"
+import {
+  ProviderContext,
+  CompanyContext,
+} from "./PraticeComponent/Context/companyContext"
+import Chakra from "./PraticeComponent/Context/Chakra"
+import GetPosts from "./PraticeComponent/Axios/GetPosts"
+import PostRequest from "./PraticeComponent/Axios/PostRequest"
+import Counter from "./Hooks in React/Counter"
+import PrevStateWithCounter from "./Hooks in React/useState/PrevStateWithCounter"
 function App() {
   return (
     <div className="App">
-      <PostRequest />
+      <PrevStateWithCounter />
+      {/* <Counter /> */}
+      {/* <PostRequest /> */}
+      {/* <GetPosts /> */}
+      {/* <PostRequest /> */}
+      {/* <ProviderContext value="Ammoru" />
+      <Chakra />
+      <ProviderContext /> */}
+      {/* <userContext.Provider value="Ramesh">
+        <ComponentC />
+      </userContext.Provider> */}
+      {/* <Logic
+        render={(counter, incFun) => {
+          return <HoverClick counter={counter} incFun={incFun} />
+        }}
+      /> */}
+
+      {/* <ListRendering /> */}
+      {/* <Portal /> */}
+      {/* <PostRequest /> */}
       {/* <MovieTitles /> */}
       {/* <PostRequest /> */}
       {/* <DisplayPosts /> */}
