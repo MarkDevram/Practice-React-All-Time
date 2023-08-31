@@ -52,12 +52,13 @@ import {
 import Chakra from "./PraticeComponent/Context/Chakra"
 import GetPosts from "./PraticeComponent/Axios/GetPosts"
 import PostRequest from "./PraticeComponent/Axios/PostRequest"
-import Counter from "./Hooks in React/Counter"
 import PrevStateWithCounter from "./Hooks in React/useState/PrevStateWithCounter"
+import UseStateWithObject from "./Hooks in React/useState/UseStateWithObject"
 function App() {
   return (
     <div className="App">
-      <PrevStateWithCounter />
+      <UseStateWithObject />
+      {/* <PrevStateWithCounter /> */}
       {/* <Counter /> */}
       {/* <PostRequest /> */}
       {/* <GetPosts /> */}
