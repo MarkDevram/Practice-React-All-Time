@@ -55,10 +55,14 @@ import PostRequest from "./PraticeComponent/Axios/PostRequest"
 import PrevStateWithCounter from "./Hooks in React/useState/PrevStateWithCounter"
 import UseStateWithObject from "./Hooks in React/useState/UseStateWithObject"
 import UseStateWithArray from "./Hooks in React/useState/UseStateWithArray"
+import UseEffectCounter from "./Hooks in React/useEffect/UseEffectCounter"
+import UseEffect_ConditionalRenderings from "./Hooks in React/useEffect/UseEffect_ConditionalRenderings"
 function App() {
   return (
     <div className="App">
-      <UseStateWithArray />
+      <UseEffect_ConditionalRenderings />
+      {/* <UseEffectCounter /> */}
+      {/* <UseStateWithArray /> */}
       {/* <UseStateWithObject /> */}
       {/* <PrevStateWithCounter /> */}
       {/* <Counter /> */}
