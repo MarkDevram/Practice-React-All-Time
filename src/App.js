@@ -54,7 +54,7 @@ import GetPosts from "./PraticeComponent/Axios/GetPosts"
 import PostRequest from "./PraticeComponent/Axios/PostRequest"
 import PrevStateWithCounter from "./Hooks in React/useState/PrevStateWithCounter"
 import UseStateWithObject from "./Hooks in React/useState/UseStateWithObject"
-import UseStateWithArray from "./Hooks in React/UseStateWithArray"
+import UseStateWithArray from "./Hooks in React/useState/UseStateWithArray"
 function App() {
   return (
     <div className="App">
