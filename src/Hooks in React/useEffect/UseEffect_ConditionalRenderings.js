@@ -32,6 +32,10 @@ function UseEffect_ConditionalRenderings() {
           by that means it is to say that react/listen only when you see that
           changes happens to counter state
         </p>
+        <p>
+          1 ) Here we are Only Listening to Counter Variable <br />2 ) whenever
+          change in input event , useEffect will not exceuted
+        </p>
       </pre>
     </div>
   )
