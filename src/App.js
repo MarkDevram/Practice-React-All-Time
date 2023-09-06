@@ -59,11 +59,17 @@ import UseEffectCounter from "./Hooks in React/useEffect/UseEffectCounter"
 import UseEffect_ConditionalRenderings from "./Hooks in React/useEffect/UseEffect_ConditionalRenderings"
 import MousePostion from "./Hooks in React/useEffect/MousePostion"
 import MousePositionUsingUseEffect from "./Hooks in React/useEffect/MousePositionUsingUseEffect"
+import UseEffectWithCleanup from "./Hooks in React/useEffect/UseEffectWithCleanup"
+import IntervalClassCounter from "./Hooks in React/useEffect/IntervalClassCounter"
+import IntervalCounterWithHooks from "./Hooks in React/useEffect/IntervalCounterWithHooks"
 function App() {
   return (
     <div className="App">
-      <MousePositionUsingUseEffect />
-      <MousePostion />
+      {/* <IntervalClassCounter /> */}
+      <IntervalCounterWithHooks />
+      {/* <UseEffectWithCleanup /> */}
+      {/* <MousePositionUsingUseEffect /> */}
+      {/* <MousePostion /> */}
       {/* <UseEffect_ConditionalRenderings /> */}
       {/* <UseEffectCounter /> */}
       {/* <UseStateWithArray /> */}
