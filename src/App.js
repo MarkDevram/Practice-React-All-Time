@@ -62,11 +62,13 @@ import MousePositionUsingUseEffect from "./Hooks in React/useEffect/MousePositio
 import UseEffectWithCleanup from "./Hooks in React/useEffect/UseEffectWithCleanup"
 import IntervalClassCounter from "./Hooks in React/useEffect/IntervalClassCounter"
 import IntervalCounterWithHooks from "./Hooks in React/useEffect/IntervalCounterWithHooks"
+import FetchingByUserID from "./Hooks in React/useEffectDataFetching/FetchingByUserID"
 function App() {
   return (
     <div className="App">
+      <FetchingByUserID />
       {/* <IntervalClassCounter /> */}
-      <IntervalCounterWithHooks />
+      {/* <IntervalCounterWithHooks /> */}
       {/* <UseEffectWithCleanup /> */}
       {/* <MousePositionUsingUseEffect /> */}
       {/* <MousePostion /> */}

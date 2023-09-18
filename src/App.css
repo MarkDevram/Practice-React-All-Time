@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
-
+.listRendering {
+  position: relative;
+  text-align: left;
+  left: 350px;
+  top: 50px;
+  height: 505px;
+  color: blue;
+  font-size: 23px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
