@@ -63,10 +63,15 @@ import UseEffectWithCleanup from "./Hooks in React/useEffect/UseEffectWithCleanu
 import IntervalClassCounter from "./Hooks in React/useEffect/IntervalClassCounter"
 import IntervalCounterWithHooks from "./Hooks in React/useEffect/IntervalCounterWithHooks"
 import FetchingByUserID from "./Hooks in React/useEffectDataFetching/FetchingByUserID"
+import KCnxt from "./Hooks in React/useContext/KeyContext"
+import House from "./Hooks in React/useContext/House"
 function App() {
   return (
     <div className="App">
-      <FetchingByUserID />
+      <KCnxt.Provider value={"Vinayaka Chavithi Shubhakanshalu 🕉"}>
+        <House />
+      </KCnxt.Provider>
+      {/* <FetchingByUserID /> */}
       {/* <IntervalClassCounter /> */}
       {/* <IntervalCounterWithHooks /> */}
       {/* <UseEffectWithCleanup /> */}
