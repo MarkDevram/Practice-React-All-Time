@@ -65,12 +65,16 @@ import IntervalCounterWithHooks from "./Hooks in React/useEffect/IntervalCounter
 import FetchingByUserID from "./Hooks in React/useEffectDataFetching/FetchingByUserID"
 import KCnxt from "./Hooks in React/useContext/KeyContext"
 import House from "./Hooks in React/useContext/House"
+import Demo from "./Hooks in React/useReducer/Demo"
+import UpdateAge from "./Hooks in React/useReducer/UpdateAge"
 function App() {
   return (
     <div className="App">
-      <KCnxt.Provider value={"Vinayaka Chavithi Shubhakanshalu 🕉"}>
+      <UpdateAge />
+      {/* <Demo /> */}
+      {/* <KCnxt.Provider value={"Vinayaka Chavithi Shubhakanshalu 🕉"}>
         <House />
-      </KCnxt.Provider>
+      </KCnxt.Provider> */}
       {/* <FetchingByUserID /> */}
       {/* <IntervalClassCounter /> */}
       {/* <IntervalCounterWithHooks /> */}
