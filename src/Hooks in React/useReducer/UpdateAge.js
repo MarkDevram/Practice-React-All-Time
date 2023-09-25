@@ -26,7 +26,9 @@ function UpdateAge() {
       <br />
       <button
         onClick={function () {
-          dispatch({ type: "update" })
+          if (userInput > 18) {
+            dispatch({ type: "update" })
+          }
         }}
       >
         ➖Submit➖
