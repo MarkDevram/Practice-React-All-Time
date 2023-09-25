@@ -12,12 +12,14 @@ function UpdateAge() {
   const [state, dispatch] = useReducer(reducer, { age: 18 })
   return (
     <div>
-      <h5>Update your Age❓</h5>
+      <h5>Need to Update your Age❓</h5>
       <pre>Note : By Defaultly your age is set to 18,Please Update !</pre>
       <h4>Your age right now is {state.age}</h4>
       <input
+        type="number"
         onChange={function (e) {
-          userInput = e.target.value
+          console.log(e.target.value.length)
+          userInput = Number(e.target.value)
         }}
       />
       <br />
