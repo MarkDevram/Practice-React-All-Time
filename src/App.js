@@ -69,10 +69,12 @@ import Demo from "./Hooks in React/useReducer/Demo"
 import UpdateAge from "./Hooks in React/useReducer/UpdateAge"
 import CounterOne from "./Hooks in React/useReducer/CounterOne"
 import CounterTwo from "./Hooks in React/useReducer/CounterTwo"
+import CounterThree from "./Hooks in React/useReducer/CounterThree"
 function App() {
   return (
     <div className="App">
-      <CounterTwo />
+      <CounterThree />
+      {/* <CounterTwo /> */}
       {/* <CounterOne /> */}
       {/* <UpdateAge /> */}
       {/* <Demo /> */}
