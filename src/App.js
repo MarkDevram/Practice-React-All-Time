@@ -65,15 +65,44 @@ import IntervalCounterWithHooks from "./Hooks in React/useEffect/IntervalCounter
 import FetchingByUserID from "./Hooks in React/useEffectDataFetching/FetchingByUserID"
 import KCnxt from "./Hooks in React/useContext/KeyContext"
 import House from "./Hooks in React/useContext/House"
-import Demo from "./Hooks in React/useReducer/Demo"
 import UpdateAge from "./Hooks in React/useReducer/UpdateAge"
-import CounterOne from "./Hooks in React/useReducer/CounterOne"
-import CounterTwo from "./Hooks in React/useReducer/CounterTwo"
+import CounterOne from "./Hooks in React/useContext&useReducer/CounterOne"
+import CounterTwo from "./Hooks in React/useContext&useReducer/CounterTwo"
 import CounterThree from "./Hooks in React/useReducer/CounterThree"
+import { createContext, useReducer } from "react"
+export const CountContext = createContext()
+function reducer(state, action) {
+  switch (action.type) {
+    case "Increment":
+      return {
+        count: state.count + 1,
+      }
+    case "Decrement":
+      return {
+        count: state.count - 1,
+      }
+    case "Reset":
+      return {
+        count: state.count + 1,
+      }
+    default:
+      return {
+        count: 0,
+      }
+  }
+}
 function App() {
+  const [counter, dispatch] = useReducer(reducer, { count: 0 })
   return (
     <div className="App">
-      <CounterThree />
+      <CountContext.Provider
+        value={{ counterState: counter, dispatchFn: dispatch }}
+      >
+        <CounterOne />
+
+        <CounterTwo />
+      </CountContext.Provider>
+      {/* <CounterThree /> */}
       {/* <CounterTwo /> */}
       {/* <CounterOne /> */}
       {/* <UpdateAge /> */}
