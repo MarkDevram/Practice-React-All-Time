@@ -67,10 +67,14 @@ import KCnxt from "./Hooks in React/useContext/KeyContext"
 import House from "./Hooks in React/useContext/House"
 import Demo from "./Hooks in React/useReducer/Demo"
 import UpdateAge from "./Hooks in React/useReducer/UpdateAge"
+import CounterOne from "./Hooks in React/useReducer/CounterOne"
+import CounterTwo from "./Hooks in React/useReducer/CounterTwo"
 function App() {
   return (
     <div className="App">
-      <UpdateAge />
+      <CounterTwo />
+      {/* <CounterOne /> */}
+      {/* <UpdateAge /> */}
       {/* <Demo /> */}
       {/* <KCnxt.Provider value={"Vinayaka Chavithi Shubhakanshalu 🕉"}>
         <House />

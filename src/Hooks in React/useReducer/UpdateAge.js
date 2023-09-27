@@ -28,6 +28,8 @@ function UpdateAge() {
         onClick={function () {
           if (userInput > 18) {
             dispatch({ type: "update" })
+          } else {
+            alert("Follow the Age Guidelines")
           }
         }}
       >
