@@ -70,6 +70,7 @@ import CounterOne from "./Hooks in React/useContext&useReducer/CounterOne"
 import CounterTwo from "./Hooks in React/useContext&useReducer/CounterTwo"
 import CounterThree from "./Hooks in React/useReducer/CounterThree"
 import { createContext, useReducer } from "react"
+import DataFetchOne from "./Hooks in React/useReducer/DataFetchOne"
 export const CountContext = createContext()
 function reducer(state, action) {
   switch (action.type) {
@@ -95,13 +96,14 @@ function App() {
   const [counter, dispatch] = useReducer(reducer, { count: 0 })
   return (
     <div className="App">
-      <CountContext.Provider
+      <DataFetchOne />
+      {/* <CountContext.Provider
         value={{ counterState: counter, dispatchFn: dispatch }}
       >
         <CounterOne />
 
         <CounterTwo />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
       {/* <CounterThree /> */}
       {/* <CounterTwo /> */}
       {/* <CounterOne /> */}
