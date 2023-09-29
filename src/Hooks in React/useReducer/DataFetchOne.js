@@ -9,9 +9,11 @@ function DataFetchOne() {
     axios
       .get("https://jsonplaceholder.typicode.com/posts/1")
       .then((response) => {
-        setLoading(false)
-        setError(false)
-        setPost(response.data)
+        setTimeout(() => {
+          setLoading(false)
+          setError(false)
+          setPost(response.data)
+        }, 3000)
       })
       .catch((error) => {
         setError(true)
