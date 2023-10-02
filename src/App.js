@@ -72,6 +72,7 @@ import CounterThree from "./Hooks in React/useReducer/CounterThree"
 import { createContext, useReducer } from "react"
 import DataFetchOne from "./Hooks in React/useReducer/DataFetchOne"
 import DataFetchTwo from "./Hooks in React/useReducer/DataFetchTwo"
+import ParentCompUseCallback from "./Hooks in React/useCallback/ParentCompUseCallback"
 export const CountContext = createContext()
 function reducer(state, action) {
   switch (action.type) {
@@ -97,7 +98,8 @@ function App() {
   const [counter, dispatch] = useReducer(reducer, { count: 0 })
   return (
     <div className="App">
-      <DataFetchTwo />
+      <ParentCompUseCallback />
+      {/* <DataFetchTwo /> */}
       {/* <DataFetchOne /> */}
       {/* <CountContext.Provider
         value={{ counterState: counter, dispatchFn: dispatch }}
