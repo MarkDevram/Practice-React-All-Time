@@ -66,8 +66,7 @@ import FetchingByUserID from "./Hooks in React/useEffectDataFetching/FetchingByU
 import KCnxt from "./Hooks in React/useContext/KeyContext"
 import House from "./Hooks in React/useContext/House"
 import UpdateAge from "./Hooks in React/useReducer/UpdateAge"
-import CounterOne from "./Hooks in React/useContext&useReducer/CounterOne"
-import CounterTwo from "./Hooks in React/useContext&useReducer/CounterTwo"
+// import CounterTwo from "./Hooks in React/useContext&useReducer/CounterTwo"
 import CounterThree from "./Hooks in React/useReducer/CounterThree"
 import { createContext, useReducer } from "react"
 import DataFetchOne from "./Hooks in React/useReducer/DataFetchOne"
@@ -76,6 +75,8 @@ import ParentCompUseCallback from "./Hooks in React/useCallback/ParentCompUseCal
 import CounterMemo from "./Hooks in React/useMemo/CounterMemo"
 import CounterClass from "./Hooks in React/useRef/CounterClass"
 import CounterHook from "./Hooks in React/useRef/CounterHook"
+import CounterOne from "./Hooks in React/CustomHooks/CounterOne"
+import CounterTwo from "./Hooks in React/CustomHooks/CounterTwo"
 export const CountContext = createContext()
 function reducer(state, action) {
   switch (action.type) {
@@ -101,8 +102,11 @@ function App() {
   const [counter, dispatch] = useReducer(reducer, { count: 0 })
   return (
     <div className="App">
-      <CounterClass />
-      <CounterHook />
+      <CounterOne />
+      <CounterTwo />
+
+      {/* <CounterClass /> */}
+      {/* <CounterHook /> */}
       {/* <CounterMemo /> */}
       {/* <ParentCompUseCallback /> */}
       {/* <DataFetchTwo /> */}
