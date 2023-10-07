@@ -77,6 +77,8 @@ import CounterClass from "./Hooks in React/useRef/CounterClass"
 import CounterHook from "./Hooks in React/useRef/CounterHook"
 import CounterOne from "./Hooks in React/CustomHooks/CounterOne"
 import CounterTwo from "./Hooks in React/CustomHooks/CounterTwo"
+import DocTitleSet1 from "./Hooks in React/CustomHooks/DocTitleSet1"
+import DocTitleSet2 from "./Hooks in React/CustomHooks/DocTitleSet2"
 export const CountContext = createContext()
 function reducer(state, action) {
   switch (action.type) {
@@ -102,8 +104,11 @@ function App() {
   const [counter, dispatch] = useReducer(reducer, { count: 0 })
   return (
     <div className="App">
-      <CounterOne />
-      <CounterTwo />
+      <DocTitleSet1 />
+      <DocTitleSet2 />
+      <pre>You wil see that title gets updated for both buttons</pre>
+      {/* <CounterOne />
+      <CounterTwo /> */}
 
       {/* <CounterClass /> */}
       {/* <CounterHook /> */}
